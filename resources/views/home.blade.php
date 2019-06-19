@@ -13,19 +13,17 @@
                 <div class="pr-5"><strong>198</strong> followers</div>
                 <div class="pr-5"><strong>250</strong> following</div>
             </div>
-            <div class="account-name pt-4"><strong>Ido Barnea</strong></div>
+            <div class="account-name pt-4"><strong>{{ $user->profile->title }}</strong></div>
             <div class="account-desc">
-                <p>
-                    לאהוב (את אשתי והילדים),
-                    לאכול (כמעט כל דבר)
-                    לצלם (כדי לתפוס את הרגעים האלה בחיים)
-                </p>
+                <p>{{ $user->profile->description }}</p>
             </div>
+            @if( $user->profile->url )
             <div class="account-website pt-4">
-                <a href="#" rel="nofollow" target="_blank">
-                    www.barbareshet.co.il
+                <a href="http://{{ $user->profile->url }}" rel="nofollow" target="_blank">
+                    {{ $user->profile->url }}
                 </a>
             </div>
+            @endif
         </div>
     </div>
     <div class="row pt-4">

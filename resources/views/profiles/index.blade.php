@@ -16,7 +16,7 @@
                 <div class="pr-5"><strong>198</strong> followers</div>
                 <div class="pr-5"><strong>250</strong> following</div>
             </div>
-            <div class="account-name pt-4"><strong>{{ $user->profile->title }}</strong></div>
+            <div class="account-name pt-4"><strong>{{ $user->profile->username }}</strong></div>
             <div class="account-desc">
                 <p>{{ $user->profile->description }}</p>
             </div>
